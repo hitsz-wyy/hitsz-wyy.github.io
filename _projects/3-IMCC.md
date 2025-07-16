@@ -13,7 +13,7 @@ collection: projects
 
 全国总决赛视频： 
  <video width="720" height="405" controls>
-  <source src="https://hitsz-wyy.github.io/video/GuoSai.mp4" type="video/mp4">
+  <source src="/video/GuoSai.webm" type="video/webm">
   Your browser does not support the video tag.
 </video>
 
