@@ -15,5 +15,13 @@ collection: projects
 * 在仿真环境中使用PPO算法基于稀疏奖励训练动作选择器策略，残差策略，动作选择残差策略，并进行性能对比。
 * 实物实验：搭建Franka机械臂实物平台，基于FoundationPose实现FurnitureBench任务中待组装部件的位姿估计，对模仿学习策略、残差强化学习策略和时序动作选择器策略进行性能评估。
 
+ <video width="720" controls>
+  <source src="/video/franka1.webm" type="video/webm">
+  Your browser does not support the video tag.
+</video>
+ <video width="720" controls>
+  <source src="/video/franka2.webm" type="video/webm">
+  Your browser does not support the video tag.
+</video>
 ---
 （待完善中...）
