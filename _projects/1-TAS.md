@@ -15,12 +15,41 @@ collection: projects
 * 在仿真环境中使用PPO算法基于稀疏奖励训练动作选择器策略，残差策略，动作选择残差策略，并进行性能对比。
 * 实物实验：搭建Franka机械臂实物平台，基于FoundationPose实现FurnitureBench任务中待组装部件的位姿估计，对模仿学习策略、残差强化学习策略和时序动作选择器策略进行性能评估。
 
- <video width="720" controls>
-  <source src="/video/franka1.webm" type="video/webm">
-  Your browser does not support the video tag.
-</video>
+## 实验结果
+**TAS性能提升**
+
+
+**PushT任务对比**
+<div style="display: flex; justify-content: space-between; gap: 20px; margin-bottom: 30px;">
+  <div style="flex: 1;">
+    <img src="/video/1step-animation.gif" alt="AH=1" style="width: 100%; border-radius: 8px;">
+    <p style="text-align: center; margin-top: 8px;">AH=1(动作停滞)</p>
+  </div>
+  <div style="flex: 1;">
+    <img src="/video/8step-animation.gif" alt="AH=8" style="width: 100%; border-radius: 8px;">
+    <p style="text-align: center; margin-top: 8px;">AH=8(缺少实时反馈)</p>
+  </div>
+  <div style="flex: 1;">
+    <img src="/video/selector-animation.gif" alt="TAS" style="width: 100%; border-radius: 8px;">
+    <p style="text-align: center; margin-top: 8px;">TAS</p>
+  </div>
+</div>
+
+**残差策略性能提升**
+<img src="/images/W&B Chart.png" alt="残差策略性能对比" 
+    style="max-width: 100%; height: auto; border-radius: 8px; margin: 20px 0;">
+
+
+**FurnitureBench实物实验**  
+残差策略
  <video width="720" controls>
   <source src="/video/franka2.webm" type="video/webm">
+  Your browser does not support the video tag.
+</video>
+  
+残差策略+动作选择器
+ <video width="720" controls>
+  <source src="/video/franka1.webm" type="video/webm">
   Your browser does not support the video tag.
 </video>
 ---
