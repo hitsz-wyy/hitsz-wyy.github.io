@@ -52,9 +52,9 @@ collection: projects
   <source src="/video/franka1.webm" type="video/webm">
   Your browser does not support the video tag.
 </video>
- <video width="720" controls>
+ <!-- <video width="720" controls>
   <source src="/video/franka3.webm" type="video/webm">
   Your browser does not support the video tag.
-</video>
+</video> -->
 ---
 （待完善中...）
